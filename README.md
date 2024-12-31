@@ -1,4 +1,4 @@
-# Pong Game
+# Wordle
 Web domain :https://wordle-fun.glitch.me/
 Welcome to the Wordle Game! This is a web-based implementation of the popular word puzzle game where you guess a 5-letter word within six attempts. The game provides feedback on each guess to help you figure out the correct word.
 
