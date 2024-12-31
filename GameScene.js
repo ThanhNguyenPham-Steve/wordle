@@ -37,7 +37,7 @@ class GameScene extends Phaser.Scene {
 
 
         this.currentIndex = 0;
-        gameState.word = gameState.words[Math.floor(Math.random() * gameState.words.length)];
+        gameState.word = gameState.wordsList[Math.floor(Math.random() * gameState.wordsList.length)];
         this.wordArray = gameState.word.split('');
 
         // Create a group to store all the word slots
@@ -112,7 +112,7 @@ class GameScene extends Phaser.Scene {
             }
             else {
                 const typedWord = this.typedLetters.join('');
-                if (gameState.words.includes(typedWord)) {
+                if (gameState.words.search(typedWord)) {
                     this.warningText.setVisible(false);
                     // Proceed with the game logic for a valid word
                     let count = 0;
