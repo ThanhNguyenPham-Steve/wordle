@@ -10,7 +10,7 @@ const config = {
     scene: [StartScene, GameScene, EndScene]
   };
   // Fetch words from the text file and initialize the game
-fetch('path/to/words.txt')
+fetch('words.txt')
 .then(response => response.text())
 .then(data => {
     gameState.words = data.split('\n').map(word => word.trim()).filter(word => word.length > 0);
